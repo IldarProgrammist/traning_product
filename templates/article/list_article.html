@@ -1,0 +1,18 @@
+{% extends 'for_aritcle.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+   <div class="wraper_cont">
+         <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                {% for art in article %}
+                    <a class="link_title_article" href="{{ art.get_absolute_url}}"><h2 class="title_article">{{ art.title }}</h2></a>
+                        <p class="text_post">{{ art.text_post| truncatechars_html:690 }} </p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+   </div>
+{% endblock %}

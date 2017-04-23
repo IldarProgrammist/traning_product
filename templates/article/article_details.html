@@ -1,0 +1,16 @@
+{% extends 'for_aritcle.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="wraper_cont">
+     <div class="container">
+        <div class="row">
+           <div class="col-lg-12">
+                <h2>{{ article.title }}</h2>
+                <p class="text_post_det">{{ article.text_post }}</p>
+                    <a class="back" href="{% url 'article' %}"><img src="/static/img/back.png">вернуться</a>
+           </div>
+        </div>
+    </div>
+    </div>
+{% endblock %}

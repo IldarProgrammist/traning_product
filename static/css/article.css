@@ -1,0 +1,19 @@
+.wraper_cont{
+    padding-top: 50px;
+}
+
+.title_article{
+    font-size: 46px;
+}
+.text_post{
+    font-size: 26px;
+}
+.link_title_article{
+    color: #5e5e5e;
+}
+
+.link_title_article:hover{
+
+    text-decoration: none;
+    color: black;
+}
