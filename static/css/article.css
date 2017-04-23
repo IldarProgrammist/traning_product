@@ -17,3 +17,18 @@
     text-decoration: none;
     color: black;
 }
+.back{
+    font-size: 26px;
+    color: #9d9d9d;
+}
+
+.back:hover{
+     text-decoration: none;
+    color: black;
+}
+
+.icon-back{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
