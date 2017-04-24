@@ -1,12 +1,15 @@
 .wraper_cont{
     padding-top: 50px;
 }
-
+.data_pub{
+    color: #8a6d3b;
+}
 .title_article{
-    font-size: 46px;
+    font-size: 42px;
 }
 .text_post{
-    font-size: 26px;
+    font-size: 22px;
+   text-align: justify;
 }
 .link_title_article{
     color: #5e5e5e;
@@ -31,4 +34,10 @@
     width: 30px;
     height: 30px;
     margin-right: 20px;
+}
+.tren_img{
+    width:400px ;
+    height: 400px;
+    float: left;
+
 }
