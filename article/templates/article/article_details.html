@@ -7,11 +7,9 @@
         <div class="row">
 
            <div class="col-lg-12">
-
                 <h2 class="title_article">{{ article.title }}</h2>
-                    <p class="text_post">{{ article.text_post| safe }}</p>
+                    <p class="text_post">{{ article.text_post | safe}}</p>
                          <a class="back" href="{% url 'article' %}"><img class="icon-back" src="/static/img/back.png">вернуться</a>
-
            </div>
         </div>
     </div>

@@ -7,10 +7,14 @@
 .title_article{
     font-size: 42px;
 }
+
+/*Основной текст(абзац)*/
 .text_post{
-    font-size: 22px;
+    font-size: 28px;
    text-align: justify;
 }
+
+
 .link_title_article{
     color: #5e5e5e;
 }
@@ -35,9 +39,11 @@
     height: 30px;
     margin-right: 20px;
 }
-.tren_img{
-    width:400px ;
-    height: 400px;
-    float: left;
 
+.tren_img{
+    float: right;
 }
+
+/*p{*/
+    /*color: red;*/
+/*}*/

@@ -10,7 +10,6 @@
 
                 {% for new in news %}
                     <a class="link_title_article" href="{{ new.get_absolute_url}}"><h2 class="title_article">{{ new.title_news  }}</h2></a>
-                       <img src="{{MEDIA_URL}}">
                             <p class="text_post">{{ new.text_post| truncatechars_html:590 }}</p>
                 {% endfor %}
             </div>

@@ -17,7 +17,6 @@ from django.conf.global_settings import MEDIA_URL
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
@@ -29,6 +28,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+TEMPLATE_DIRS = (
+    '/traning_product/templates',
+    '/traning_product/landing/templates',
+    '/traning_product/article/templates',
+    '/traning_product/news/templates',
+)
 
 # Application definition
 
@@ -42,6 +47,8 @@ INSTALLED_APPS = [
     'landing',
     'article',
     'news',
+    'ckeditor',
+    'ckeditor_uploader',
 ]
 
 MIDDLEWARE = [
@@ -75,7 +82,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'traning_product.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
@@ -85,7 +91,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -105,7 +110,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
@@ -119,7 +123,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
@@ -128,7 +131,14 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+CKEDITOR_UPLOAD_PATH ='uploads/'
 
+CKEDITOR_CONFIGS = {
+    'default': {
 
-
+    },
+}
+CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
+CKEDITOR_IMAGE_BACKEND = 'pillow'
