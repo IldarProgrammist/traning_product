@@ -1,7 +1,0 @@
-Django==1.10
-django-admin-tools==0.8.0
-django-bootstrap==0.2.4
-django-bootstrap3==8.2.2
-numpy==1.12.1
-olefile==0.44
-Pillow==4.1.0
